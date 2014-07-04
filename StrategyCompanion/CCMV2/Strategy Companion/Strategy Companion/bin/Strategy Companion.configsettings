@@ -1,0 +1,285 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>CCMV2NPO_DW_DS</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=CHI-NAV-SQLQ01;Integrated Security=SSPI;Initial Catalog=CCMV2NPO_DW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">rathnam.c-ext</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>DimAnchorDate</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimUtilizationByProvider_Procedure</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimUtilizationByProvider_Provider</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimProcedureByCost_Procedure</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Utilization</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Patient</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Codeset Drug</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFinanceReport_Population</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimFinanceReport_Metric</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimHealthPlan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimTotalPatientvsCost_Population</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Provider Claim Cost Provider</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimProduct</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimMetric</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Population</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCodeGroup</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCodeGroup_Inpatient</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCodeGroupICD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimCodeGroup_OutPatient</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DimProvider</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>StrategyCompanionDWCube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Procedure By Cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Procedure By Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FactProcedureByCost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Procedure By Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Utilizers By Provider</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Utilizers By Provider</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Utilizers By Patient</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Utilizers By Patient</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Therapeutic Class</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Therapeutic Class</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Financial Report</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Financial Report</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FactFinancialReportCost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Financial Report</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Dr Cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dr Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FactTotalPatientvsTotal cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dr Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Health Plan Cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Health Plan Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Provider Health Plan Cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Provider Health Plan Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FactProviderwiseClaimsCosting</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Provider Health Plan Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>IPACube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Bridge Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bridge Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Bridge Health Plan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bridge Health Plan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact In Patient</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact In Patient</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Bridge Patient ICD Grouper</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bridge Patient ICD Grouper</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Out Patient</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Out Patient</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Readmission</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Readmission</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Bridge Patient Code Group Provider</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bridge Patient Code Group Provider</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>BridgeHealthPlan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Bridge Health Plan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact7 Day Cnt</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact7 Day Cnt</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact21 Day Cnt</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact21 Day Cnt</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact30 Day Cnt</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact30 Day Cnt</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact60 Day Cnt</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact60 Day Cnt</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

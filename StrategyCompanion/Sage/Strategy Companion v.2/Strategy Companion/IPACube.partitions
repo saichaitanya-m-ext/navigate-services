@@ -1,0 +1,265 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7ff81795-d760-4a1e-a92f-82b7df1e51a4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IPACube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Bridge Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="abb6de46-8a8d-4aa3-b7a6-d6acebd239db">
+          <ID>Bridge Product</ID>
+          <Name>Bridge Product</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="76cdec0b-2e43-4221-984f-c74a7822f88d">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_BridgeProduct</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bridge Health Plan</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f2ca15c5-ece5-43aa-94a0-9a2f81e73cdf">
+          <ID>Bridge Health Plan</ID>
+          <Name>Bridge Health Plan</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b0f4ff39-6151-4d38-aff2-4740c67fe34d">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_BridgeHealthPlan</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact In Patient</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="37128d58-fb46-4a41-9485-0348c010e1b3">
+          <ID>Fact In Patient</ID>
+          <Name>Fact In Patient</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="aca79ad7-a7e0-4e42-917a-114a44d1bdc1">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>FactInPatient</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactEnrollmentPatientCount</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b0b8eb3d-bbe7-4053-9855-b97eec503003">
+          <ID>Fact Enrollment</ID>
+          <Name>Fact Enrollment</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="45bd734c-884c-4fa2-af3b-9dafa58e38a4">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>FactEnrollment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactEnrollment</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a252bc99-1e6c-4ffa-bf02-dbb60f38db43">
+          <ID>Fact Enrollment</ID>
+          <Name>Fact Enrollment</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="df919a58-cd63-4308-bd50-6f063e64d53c">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>FactEnrollment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bridge Patient ICD Grouper</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8763c50f-6051-4e14-be2a-2764292f2fa5">
+          <ID>Bridge Patient ICD Grouper</ID>
+          <Name>Bridge Patient ICD Grouper</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d5ac1bf4-95ec-458b-a0de-d47077698f89">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>BridgePatientICDGrouper</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Out Patient</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="68acc90d-be4d-42ee-81b3-196d6aef1e35">
+          <ID>Fact Out Patient</ID>
+          <Name>Fact Out Patient</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="406ac177-d88a-47e2-86cb-dafc7a92876c">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>FactOutPatient</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Readmission</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9d7078fb-3500-425a-bab3-b59e88ae137c">
+          <ID>Fact Readmission</ID>
+          <Name>Fact Readmission</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="48d60f00-3a69-4f48-98f9-2f0548af15c3">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>FactReadmission</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bridge Patient Code Group Provider</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0b650239-2f5f-42cd-a553-2bbec1697b0a">
+          <ID>Bridge Patient Code Group Provider</ID>
+          <Name>Bridge Patient Code Group Provider</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="662a0fe8-df6a-452d-8393-3945a084875d">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_BridgePatientCodeGroupProvider</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact7 Day Cnt</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b48c1357-15bb-46bb-8a89-42b3ece837ab">
+          <ID>Fact7 Day Cnt</ID>
+          <Name>Fact7 Day Cnt</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a8fe61fa-dd51-4f3d-9dc1-715a1017ec05">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>Fact7DayCnt</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact21 Day Cnt</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="99345df8-b0fb-469a-94a5-e99017fb41ae">
+          <ID>Fact21 Day Cnt</ID>
+          <Name>Fact21 Day Cnt</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cc6017e1-c946-41fe-9309-5f651a68e8c8">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>Fact21DayCnt</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact30 Day Cnt</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="08a4b340-a6b1-4acd-a6ac-a742982804b7">
+          <ID>Fact30 Day Cnt</ID>
+          <Name>Fact30 Day Cnt</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fab20f05-5817-4c2d-802f-55c19f17642f">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>Fact30DayCnt</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact60 Day Cnt</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2260c68a-e6a0-4476-a406-4eea2e717ad6">
+          <ID>Fact60 Day Cnt</ID>
+          <Name>Fact60 Day Cnt</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e6fc2efc-f8ea-47a9-b82c-f9d671146bb9">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>Fact60DayCnt</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

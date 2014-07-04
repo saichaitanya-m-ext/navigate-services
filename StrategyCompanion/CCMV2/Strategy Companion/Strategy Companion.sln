@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Strategy Companion", "Strategy Companion\Strategy Companion.dwproj", "{096A50C6-E0CA-47A2-8CE2-E5167E60C650}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{096A50C6-E0CA-47A2-8CE2-E5167E60C650}.Development|Default.ActiveCfg = Development
+		{096A50C6-E0CA-47A2-8CE2-E5167E60C650}.Development|Default.Build.0 = Development
+		{096A50C6-E0CA-47A2-8CE2-E5167E60C650}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

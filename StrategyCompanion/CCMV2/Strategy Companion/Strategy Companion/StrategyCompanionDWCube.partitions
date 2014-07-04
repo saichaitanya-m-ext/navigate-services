@@ -1,0 +1,245 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f2381af-568d-44d0-910c-6bb97f858b3f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>StrategyCompanionDWCube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Procedure By Cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="611b6036-f8f6-4a6d-9df9-059db15d9976">
+          <ID>Fact Procedure By Cost</ID>
+          <Name>Fact Procedure By Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="417eb217-f804-442b-ad59-47e58d88ccc7">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactProcedureByCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactProcedureByCost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2697d43f-a0be-4d2d-8576-c04fd997e39a">
+          <ID>Fact Procedure By Cost</ID>
+          <Name>Fact Procedure By Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ef037833-f2b9-4419-a6b6-2bea0aa198e2">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactProcedureByCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Utilizers By Provider</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="352e7e32-03e5-420d-84a1-ddbcbea93b67">
+          <ID>Fact Utilizers By Provider</ID>
+          <Name>Fact Utilizers By Provider</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="29786e76-94d5-437e-b997-69abc1d4c024">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactUtilizersByProvider</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Utilizers By Patient</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="be91241d-26a3-487f-a131-2fdab4649a28">
+          <ID>Fact Utilizers By Patient</ID>
+          <Name>Fact Utilizers By Patient</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="25668211-d871-4762-929f-95f737453e75">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactUtilizersByPatient</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Therapeutic Class</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ea49c0bb-8d9c-47ff-b5ee-2f85db5ec4bb">
+          <ID>Fact Therapeutic Class</ID>
+          <Name>Fact Therapeutic Class</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="11361bd9-9b92-48d4-a26f-003abc7792fb">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactTherapeuticClass</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Financial Report</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="44a23541-2648-48dd-b58a-7d140d179036">
+          <ID>Fact Financial Report</ID>
+          <Name>Fact Financial Report</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3bab7101-3ca8-4978-8f48-77b8277a38cb">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactFinancialReport</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactFinancialReportCost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="91901cec-9a42-43f7-8389-9031228cc9a3">
+          <ID>Fact Financial Report</ID>
+          <Name>Fact Financial Report</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d826a699-5516-488e-9402-3718713cd74b">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactFinancialReport</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Dr Cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0355ef7e-eff0-42a0-bc74-58aaf9dc5e25">
+          <ID>Fact Dr Cost</ID>
+          <Name>Fact Dr Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4894ff5c-9205-4827-bc95-e5c75c845226">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactDrCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactTotalPatientvsTotal cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="83f75744-699c-4f28-8254-c6eaca9c5679">
+          <ID>Fact Dr Cost</ID>
+          <Name>Fact Dr Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="21ede79a-df2d-41bc-93c8-1f4d9391073d">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactDrCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Health Plan Cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cd854ec5-591b-4196-8adf-8f7373104612">
+          <ID>Fact Health Plan Cost</ID>
+          <Name>Fact Health Plan Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="55e449c8-3f32-47ed-a9ea-c144e97869f8">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactHealthPlanCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Provider Health Plan Cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="607bc4b8-fc16-419d-9c9f-bab974bc7b4e">
+          <ID>Fact Provider Health Plan Cost</ID>
+          <Name>Fact Provider Health Plan Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fe6d38b9-1712-42a7-a693-356e9fb669b0">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactProviderHealthPlanCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FactProviderwiseClaimsCosting</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0a23303a-114c-4879-8f54-f8e3a209970e">
+          <ID>Fact Provider Health Plan Cost</ID>
+          <Name>Fact Provider Health Plan Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4bea5376-9c4d-4e1c-8c61-8d4c895f89ff">
+            <DataSourceViewID>CCMV2NPO DW</DataSourceViewID>
+            <TableID>dbo_FactProviderHealthPlanCost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

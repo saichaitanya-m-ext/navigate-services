@@ -1,0 +1,208 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CCMV2SageACOINT</Database>
+    <Server>CHI-SAGE-SQL-01</Server>
+    <ConnectionString>DataSource=CHI-SAGE-SQL-01;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>OVswZqSGaiATVjRzGIiYCafkiJs=2/25/2014 3:01:55 AM2/22/2014 6:19:27 AM</TimeStamp>
+        <ID>
+          <String>CCMV2NPO_DW_DS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>VXQUB51HR5+CZQH1Cp95oglTt2s=2/26/2014 12:34:49 AM2/22/2014 6:19:10 AM</TimeStamp>
+        <ID>
+          <String>CCMV2NPO DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yXObmGrrNCSJjVXWhk283ng3KHc=1/30/2014 3:58:33 AM2/22/2014 6:19:33 AM</TimeStamp>
+        <ID>
+          <String>DimAnchorDate</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>bZqvn0x36mgc3xVPYp8lytZfbzI=12/4/2013 8:20:11 AM2/22/2014 6:19:56 AM</TimeStamp>
+        <ID>
+          <String>DimUtilizationByProvider_Procedure</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rxT0/NTOhkXMVeoJQyyzaoMe0/o=12/4/2013 8:20:47 AM2/22/2014 6:19:58 AM</TimeStamp>
+        <ID>
+          <String>DimUtilizationByProvider_Provider</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ljg3ZI46QKhgscBPlBzs6s+Sovk=12/4/2013 8:23:56 AM2/22/2014 6:19:48 AM</TimeStamp>
+        <ID>
+          <String>DimProcedureByCost_Procedure</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1X5AFHaJZGcmW0iQ2uyBWUY60W8=12/5/2013 2:47:17 AM2/22/2014 6:19:55 AM</TimeStamp>
+        <ID>
+          <String>Dim Utilization</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qWJrOwRao3V9lKGPjPRQxg8b2s8=12/9/2013 12:45:39 AM2/22/2014 6:19:46 AM</TimeStamp>
+        <ID>
+          <String>Dim Patient</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>eIiCjVHJkjOHYE/I8nktwro1SPI=12/5/2013 3:41:47 AM2/22/2014 6:19:40 AM</TimeStamp>
+        <ID>
+          <String>Dim Codeset Drug</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5cGGh2IQZmYvtM6Xc2vZgkhNkm4=12/6/2013 4:17:12 AM2/22/2014 6:19:42 AM</TimeStamp>
+        <ID>
+          <String>DimFinanceReport_Population</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UqiUINgaMKq9xTdQhpELyETRfMY=12/6/2013 4:17:46 AM2/22/2014 6:19:41 AM</TimeStamp>
+        <ID>
+          <String>DimFinanceReport_Metric</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JVPijRnjGDMkl46eewZ5EiPESIw=12/6/2013 4:18:49 AM2/22/2014 6:19:44 AM</TimeStamp>
+        <ID>
+          <String>DimHealthPlan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nMrblYl9QssWk/84q1kh2yZ0Whs=12/6/2013 4:58:31 AM2/22/2014 6:19:54 AM</TimeStamp>
+        <ID>
+          <String>DimTotalPatientvsCost_Population</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SiNLQHwo95Cm6vWjoQe2RKfF1S0=12/6/2013 5:48:49 AM2/22/2014 6:19:52 AM</TimeStamp>
+        <ID>
+          <String>Dim Provider Claim Cost Provider</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4xDZGKUI/eOBmXJl8vk/wJLhBco=12/12/2013 6:00:08 AM2/22/2014 6:19:50 AM</TimeStamp>
+        <ID>
+          <String>DimProduct</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1poPpoCXoYpDOavkHt0bNFsFIEM=12/16/2013 4:04:53 AM2/22/2014 6:19:45 AM</TimeStamp>
+        <ID>
+          <String>DimMetric</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>z0P8/U0ORYmnKtJgVIF2DK6E3JA=12/17/2013 8:19:45 AM2/22/2014 6:19:31 AM</TimeStamp>
+        <ID>
+          <String>Dim Population</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4FFzum/BUtz+MtyWWIyX59fJN4Y=2/1/2014 2:51:18 AM2/22/2014 6:19:34 AM</TimeStamp>
+        <ID>
+          <String>DimCodeGroup</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DPfpJlfbKvshC/cxnbqd+97vbcc=2/1/2014 3:13:43 AM2/22/2014 6:19:37 AM</TimeStamp>
+        <ID>
+          <String>DimCodeGroup_Inpatient</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZzELzu5TBErx4apW6BqKLdwsLMs=2/1/2014 3:54:25 AM2/22/2014 6:19:36 AM</TimeStamp>
+        <ID>
+          <String>DimCodeGroupICD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NPedaykJC3omQuubD0thGO3qTK4=2/1/2014 4:15:08 AM2/22/2014 6:19:38 AM</TimeStamp>
+        <ID>
+          <String>DimCodeGroup_OutPatient</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wOR8+nBTWdVosp3tAnqKb9i9UCs=2/1/2014 4:36:46 AM2/22/2014 6:19:51 AM</TimeStamp>
+        <ID>
+          <String>DimProvider</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>7Bqcn/bwSKp5sWfFwG1jj6d/bfU=1/29/2014 3:44:18 AM2/22/2014 6:20:15 AMggGFCgbEPs/9UCBkozQWIZgpCOo=1/21/2014 8:03:32 AM2/22/2014 6:20:25 AM</TimeStamp>
+        <ID>
+          <String>StrategyCompanionDWCube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>yhNiQEuFuSzQGKhJYvWVMlp8YPw=2/26/2014 12:34:49 AM2/22/2014 6:19:59 AM54dNhc5/O0a68y0+6PwKskbpBCQ=2/26/2014 12:34:49 AM2/22/2014 6:20:05 AM</TimeStamp>
+        <ID>
+          <String>IPACube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>OcANKl/OLzesqY+havPJe5yeiSc=2/22/2014 6:25:37 AM2/22/2014 6:19:30 AM</TimeStamp>
+        <ID>
+          <String>Role 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>zWoq7+w+unmRkjO5L4mZiU9g8ts=1/28/2014 6:02:05 AM2/22/2014 6:20:11 AM</TimeStamp>
+      <ID>
+        <String>CCMV2SageACOINT</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2014-02-26T06:35:04.243333Z</LastDeployed>
+</DeploymentSnapshot>
